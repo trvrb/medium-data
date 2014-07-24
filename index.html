@@ -37,6 +37,12 @@
 
 	<body>
 
+		<div style="position: relative; top:10px; left:10px;">
+			<a href="http://bedford.io">
+				<img width="20px" src="images/logo.png">
+			</a>
+		</div>
+
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -62,6 +68,11 @@
 					Talk at <br>
 					http://bedford.io/projects/medium-data/
 				</section>		
+
+				<section>
+					<h3>via <a href="http://xkcd.com/657/">XKCD</a></h3>
+					<a class="stretch" href="images/xkcd_lord_of_the_rings.png"><img src="images/xkcd_lord_of_the_rings.png"></a>
+				</section>	
 				
 				<section>
 					<h2>Data tells a story</h2>
@@ -69,63 +80,63 @@
 
 				<section>
 					<h3><a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard">Charles Minard</a> and Napoleon's 1812 campaign</h3>
-					<a href="images/minard.png"><img src="images/minard.png"></a>
+					<a class="stretch" href="images/minard.png"><img src="images/minard.png"></a>
 				</section>
-				
-				<section>
-					<h3><a href="http://xkcd.com/657/">Randall Munroe and the Lord of the Rings</a></h3>
-					<a href="images/xkcd_lord_of_the_rings.png"><img src="images/xkcd_lord_of_the_rings.png"></a>
-				</section>	
-				
+								
 				<section>
 					<h3><a href="http://www.edwardtufte.com/">Edward Tufte</a></h3>
-					<ul>
-					<li>The Visual Display of Quantitative Information</li>
-					<li>Envisioning Information</li>
-					<li>Visual Explanations</li>
-					<li>Beautiful Evidence</li>
-					</ul>
-					<img src="images/tufte_books.gif">
+					<a href="http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142">
+						<img class="fragment fade-out" data-fragment-index="1" width="20%" src="images/visual-display.jpg">
+					</a>
+					<a href="http://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118">
+						<img data-fragment-index="1" width="20%" src="images/envisioning-information.jpg">
+					</a>
+					<a href="http://www.amazon.com/Visual-Explanations-Quantities-Evidence-Narrative/dp/0961392126">
+						<img data-fragment-index="1" width="20%" src="images/visual-explanations.jpg">
+					</a>
+					<a href="http://www.amazon.com/Beautiful-Evidence-Edward-R-Tufte/dp/0961392177">
+						<img class="fragment fade-out" data-fragment-index="1" width="20%" src="images/beautiful-evidence.jpg">
+					</a>
 				</section>		
-				
+								
 				<section>
 					<h3><a href="http://www.edwardtufte.com/">To clarify add detail</a></h3>
-					"To clarify, add detail. Imagine that, to clarify, add detail. Clutter and overload are not attributes of information, they are failures of design. If the information is in chaos, don’t start throwing out information, instead fix the design." <br> – Tufte
+					"To clarify, add detail... Clutter and overload are not attributes of information, they are failures of design. If the information is in chaos, don’t start throwing out information, instead fix the design." <br> – Tufte
 				</section>								
 				
 				<section data-background="black">
 					<h3><a href="http://www.pnas.org/content/early/2012/01/04/1119859109">Evolution of <i>Conus</i> shells</a></h3>
-					<img src="images/conus.jpg">
+					<img class="stretch" src="images/conus.jpg">
 				</section>	
 				
 				<section>
 					<h3><a href="http://www.pnas.org/content/109/30/11944.full">Greenland rising</a></h3>
-					<img src="images/greenland.jpg">
+					<img class="stretch" src="images/greenland.jpg">
 				</section>		
 				
 				<section>
 					<h3><a href="http://en.wikipedia.org/wiki/Small_multiple">Small multiples</a></h3>
-					<img src="images/vouchers.jpg">
+					<img class="stretch" src="images/vouchers.jpg">
 				</section>	
 				
 				<section>
-					<h3><a href="http://en.wikipedia.org/wiki/Small_multiple">Small multiples</a> – virus migration</h3>
-					<img src="images/histories.png">
+					<h3>Virus migration</h3>
+					<img class="stretch" src="images/histories.png">
 				</section>	
 				
 				<section>
 					<h3>Animation</h3>
-					<img src="images/pandemic.gif">
+					<img class="stretch" src="images/pandemic.gif">
 				</section>	
 				
 				<section>
 					<h3>Sequence data</h3>
-					<img src="images/pca.jpg">
+					<img class="stretch" src="images/pca.jpg">
 				</section>		
 				
 				<section>
 					<h3>Correlations</h3>
-					<img src="images/corr.png">
+					<img class="stretch" src="images/corr.png">
 				</section>																						
 				
 			</div>
@@ -144,7 +155,7 @@
 				progress: true,
 				history: true,
 				center: true,
-				margin: -0.05,
+				margin: 0.0,
 				minScale: 0.1,
     			maxScale: 5.0,
     			width: 960,
