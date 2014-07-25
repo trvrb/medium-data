@@ -37,7 +37,7 @@
 
 	<body>
 
-		<div style="position: relative; top:10px; left:10px;">
+		<div style="position: absolute; top:10px; left:10px; z-index:100;">
 			<a href="http://bedford.io">
 				<img width="20px" src="images/logo.png">
 			</a>
@@ -49,7 +49,7 @@
 			<div class="slides">
 				
 				<section>
-					<h2><span class="fragment strike-through">Big data</span></h2>
+					<h1><span class="fragment strike-through">Big data</span></h1>
 					<br>
 					<p><a href="http://bedford.io">Trevor Bedford</a> (<a href="http://twitter.com/trvrb">@trvrb</a>)
 					<p><a href="http://fhcrc.org">FHCRC</a>
@@ -65,24 +65,50 @@
 				</section>
 				
 				<section>
-					Talk at <br>
-					http://bedford.io/projects/medium-data/
-				</section>		
-
-				<section>
-					<h3>via <a href="http://xkcd.com/657/">XKCD</a></h3>
-					<a class="stretch" href="images/xkcd_lord_of_the_rings.png"><img src="images/xkcd_lord_of_the_rings.png"></a>
-				</section>	
+					Talk at <br> <a href="http://bedford.io">http://bedford.io</a>
+				</section>
 				
 				<section>
 					<h2>Data tells a story</h2>
-				</section>									
-
+				</section>						
+				
 				<section>
 					<h3><a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard">Charles Minard</a> and Napoleon's 1812 campaign</h3>
 					<a class="stretch" href="images/minard.png"><img src="images/minard.png"></a>
-				</section>
-								
+				</section>				
+
+				<!--<section>
+					<h3>via <a href="http://xkcd.com/657/">XKCD</a></h3>
+					<a class="stretch" href="images/xkcd_lord_of_the_rings.png"><img src="images/xkcd_lord_of_the_rings.png"></a>
+				</section>-->	
+	
+				<section>
+					<h2>The <i>EPAS1</i> gene and high-altitude adaptation in Tibetans</h2>
+				</section>		
+				
+				<section>
+					<h3>Tibet is high</h3>
+					<img class="stretch" src="images/tibet.jpg">
+				</section>		
+				
+				<section>
+					<h3>Tibetans are adapted to high altitudes</h3>
+					<ul>
+					<li>~600,000 people live at 14,800+ ft in elevation, where oxygen is only 60% of sea level</li>
+					<li>Among other traits, Tibetans are protected from <a href="http://en.wikipedia.org/wiki/Chronic_mountain_sickness">chronic mountain sickness</a>, exhibiting little increase in hemoglobin concentration at high altitudes</li>
+					</ul>
+				</section>									
+
+				<section>
+					<h3><a href="http://www.pnas.org/content/107/25/11459.abstract">Tibetan <i>EPAS1</i> is diverged from other populations</a></h3>
+					<img class="stretch" src="images/epas1_manhattan_plot.png">
+				</section>		
+				
+				<section>
+					<h3><a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature13408.html">Tibetan<i>EPAS1</i> derives from Denisovan DNA</a></h3>
+					<img class="stretch" src="images/epas1_haplotype_plot.png">
+				</section>					
+												
 				<section>
 					<h3><a href="http://www.edwardtufte.com/">Edward Tufte</a></h3>
 					<a href="http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142">
@@ -98,6 +124,11 @@
 						<img class="fragment fade-out" data-fragment-index="1" width="20%" src="images/beautiful-evidence.jpg">
 					</a>
 				</section>		
+				
+				<section>
+					<h2>Above all, show the data</h2>
+					A good graphic is <i>honest</i>
+				</section>					
 								
 				<section>
 					<h3><a href="http://www.edwardtufte.com/">To clarify add detail</a></h3>
@@ -124,8 +155,8 @@
 					<img class="stretch" src="images/histories.png">
 				</section>	
 				
-				<section>
-					<h3>Animation</h3>
+				<section data-background="black">
+					<h3 style="color: white;">Animation</h3>
 					<img class="stretch" src="images/pandemic.gif">
 				</section>	
 				
@@ -137,7 +168,19 @@
 				<section>
 					<h3>Correlations</h3>
 					<img class="stretch" src="images/corr.png">
-				</section>																						
+				</section>		
+				
+				<section>
+					<h3>Information density</h3>
+					<img class="stretch" src="images/melanopsin.jpg">
+				</section>	
+				
+				<section data-background="#333333">
+					<h3 style="color:white;">Haplotype animation</h3>
+					<img src="images/haplotypes.png">
+				</section>																														
+				
+	
 				
 			</div>
 
@@ -155,7 +198,7 @@
 				progress: true,
 				history: true,
 				center: true,
-				margin: 0.0,
+				margin: 0.05,
 				minScale: 0.1,
     			maxScale: 5.0,
     			width: 960,
