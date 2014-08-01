@@ -157,6 +157,10 @@
 					<h3><a href="http://www.nature.com/nature/journal/v505/n7481/full/nature12886.html">Relatedness between modern and archaic populations</a></h3>
 					<img class="stretch" src="images/denisovan_relatedness.jpg">
 				</section>					
+
+				<section data-background="#222222">
+					<img class="stretch" src="images/out_of_africa.jpg">
+				</section>	
 									
 				<section data-background="#222222">
 					<img class="stretch" src="images/middle_earth.jpg">
@@ -165,7 +169,84 @@
 				<section>
 					<h3>via <a href="http://xkcd.com/657/">XKCD</a></h3>
 					<a class="stretch" href="images/xkcd_lord_of_the_rings.png"><img src="images/xkcd_lord_of_the_rings.png"></a>
-				</section>				
+				</section>	
+				
+				<section>
+					<h2>Working with data</h2>
+				</section>	
+				
+				<section>
+					<h2>Step 1. Download data from public repository</h2>
+					For example, <a href="http://fludb.org">fludb.org</a>
+				</section>	
+				
+				<section>
+					<h2>Step 2. Clean up data and get it into a proper format</h2>
+					<pre><code data-trim>
+strain	date	date_decimal	date_precision	region	country	general_location	specific_location	source	accession	sequence
+A/Alabama/WRAIR1242P/2009	2009-02-01	2009.085	day	USACanada	USA	Alabama	Alabama	IRD	CY093263	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Alexandroupolis/99/2007	2007-02-15	2007.123	day	Europe	Greece	Greece	Alexandroupolis	IRD	EU716078	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Ashburton/280/2004	2004-10-12	2004.781	day	Oceania	NewZealand	NewZealand	Ashburton	IRD	CY002954	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Auckland/599/2000	2000-09-22	2000.726	day	Oceania	NewZealand	NewZealand	Auckland	IRD	CY023034	AACGCTGTGCCTGGGGCACCATGCAGTGCCAAACGGAACGCTAGTGAAAACAATCACGAATGACCAAATTGAAGTGACTA
+A/Australia/34/2009	2009-07-24	2009.559	day	Oceania	Australia	Australia	Australia	IRD	CY080555	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Austria/211557/2005	2005-03-01	2005.162	day	Europe	Austria	Austria	Austria	IRD	EU106666	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Bahia/100/2011	2011-03-24	2011.225	day	SouthAmerica	Brazil	Brazil	Bahia	IRD	CY099978	AACGCTGTGCCTTGGGCACCATGCAGTGCCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Bangladesh/C5_12/2003	2003-XX-XX	2003.0	year	India	Bangladesh	Bangladesh	Bangladesh	IRD	DQ179512	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA
+A/Beijing/12611/2010	2010-11-01	2010.833	day	NorthChina	China	Beijing	Beijing	Russell	NA	AACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATAGTGAAAACAATCACGAATGACCAAATTGAAGTTACTA	
+...
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Step 3. <span class="fragment strike-through">?????</span></h2>
+				</section>
+				
+				<section>
+					<h2>Step 3. Process data to generate summary statistics</h2>
+					<a href="http://bedford.io/projects/dynamics-practical/">Use phylogenetics to infer evolutionary relationships.</a>						
+					<pre><code data-trim>
+7 2664 2668 2669 2685 2747 2752 2753 2755 2756 2744 2745 2741 2739 2727 2634 180 77 78 254 303 2621 2606 2617 320 343 356 373
+0 8 9 10 244 304 305 306 315 357 390 400 419 457 458 504 535 573 593 607 623 645 868 869 871 872 873 874 878 934 935 936 937 
+3->0 7->3 8->0 2642->8 2643->2642 2644->2643 2656->2644 2657->2656 2662->2657 2664->2662 2666->2656 2667->2666 2668->2667 266
+0->India 3->Europe 7->SoutheastAsia 8->USACanada 2642->Europe 2643->USACanada 2644->Europe 2656->USACanada 2657->Europe 2662
+0->{1997.685450,5.683161} 3->{1999.233555,0.000000} 7->{2000.085000,0.000000} 8->{1998.544642,11.366322} 2642->{1999.114123,
+7->A/BANGKOK/62/2000 2664->A/BANGKOK/86/2001 2668->A/BANGKOK/178/2000 2669->A/BANGKOK/202/2000 2685->A/SINGAPORE/2/2000 2747
+0->{0.000000,0.000000} 3->{0.000000,0.000000} 7->{0.000000,0.000000} 8->{0.000000,0.000000} 2642->{0.000000,0.000000} 2643->
+					</code></pre>					
+				</section>
+				
+				<section>
+					<h2>Step 4. <span class="fragment strike-through">PROFIT!!!</span></h2>
+				</section>
+				
+				<section>
+					<h2>Step 4. Make cool figures</h2>
+					<img class="stretch" src="images/h3_map.png">
+				</section>																		
+				
+				<section>
+					<h3>Flu phylogeny shows how viruses are related to one another</h3>
+					<img class="stretch" src="images/h3_tree.png">
+				</section>	
+				
+				<section>
+					<h3>USA viruses tend to be evolutionary dead-ends</h3>
+					<img class="stretch" src="images/h3_usatree.png">
+				</section>		
+				
+				<section>
+					<h3>Chinese viruses tend to be evolutionary starting points</h3>
+					<img class="stretch" src="images/h3_schinatree.png">
+				</section>	
+				
+				<section>
+					<h3>Viruses trace their origins primary to China, India and Southeast Asia</h3>
+					<img class="stretch" src="images/h3_trunkpro.png">
+				</section>
+				
+				<section>
+					<h2>If data is looked at in the right way, answers become immediately clear</h2>
+				</section>																						
 																
 				<section>
 					<h3><a href="http://www.edwardtufte.com/">Edward Tufte</a></h3>
@@ -217,24 +298,22 @@
 					<h3><a href="http://www.pnas.org/content/109/30/11944.full">Greenland rising</a></h3>
 					<img class="stretch" src="images/greenland.jpg">
 				</section>		
-				
-				<section>
-					<h3><a href="http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1003932">Geographic circulation of the influenza virus</a></h3>
-					<img class="stretch" src="images/flu_tree.png">
-				</section>						
-				
+								
 				<section>
 					<h3><a href="http://en.wikipedia.org/wiki/Small_multiple">Small multiples</a></h3>
 					<img class="stretch" src="images/vouchers.jpg">
 				</section>	
-				
+
 				<section>
-					<h3>Virus migration</h3>
-					<img class="stretch" src="images/histories.png">
+					<h2>Mapping infection spread</h2>
+					<a href="http://en.wikipedia.org/wiki/John_Snow_(physician)">John Snow</a> and the founding of epidemiology
 				</section>	
-				
+
+				<section data-background="images/snow.jpg">
+				</section>	
+							
 				<section data-background="black">
-					<h3 style="color: white;">Pandemic spread</h3>
+					<h3 style="color: white;">Global pandemic spread</h3>
 					<img class="stretch" src="images/pandemic.gif">
 				</section>	
 				
@@ -254,22 +333,7 @@
 					<span class="fragment">(except zombies don't get on planes. Nvm...)</span>
 					</h2>
 				</section>													
-				
-				<section>
-					<h3>Sequence data</h3>
-					<img class="stretch" src="images/pca.jpg">
-				</section>		
-				
-				<section>
-					<h3>Correlations</h3>
-					<img class="stretch" src="images/corr.png">
-				</section>		
-				
-				<section>
-					<h3>Information density</h3>
-					<img class="stretch" src="images/melanopsin.jpg">
-				</section>	
-				
+						
 				<section>
 					<h3>Animating evolution of trees</h3>
 					<a href="http://bedford.io/projects/coaltrace/coaltrace.html"><img src="images/flu_tree.png"></a>
@@ -283,6 +347,10 @@
 				<section>
 					<h1><a href="http://earth.nullschool.net/#current/wind/surface/level/orthographic=-120.62,47.47,636	">earth</a></h1>
 				</section>																																		
+				
+			<section>
+					<h2>Thanks for listening</h2>
+				</section>				
 				
 			</div>
 
