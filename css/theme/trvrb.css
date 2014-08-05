@@ -142,4 +142,26 @@ body {
 .reveal .slides section .fragment.strike-through.visible {
   text-decoration: line-through;
 }
-  
+
+/*********************************************
+ * CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-up {
+  opacity: 0;
+}
+
+.reveal .controls div.navigate-down {
+  opacity: 0;
+}
+
+.reveal .controls div.navigate-left {
+  left: 24px;
+  top: 66px;
+  border-right-width: 20px;  
+}
+
+.reveal .controls div.navigate-right {
+  left: 76px;
+  top: 66px;
+  border-left-width: 20px;    
+}
